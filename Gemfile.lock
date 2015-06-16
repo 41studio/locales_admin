@@ -109,3 +109,6 @@ PLATFORMS
 DEPENDENCIES
   locales_admin!
   sqlite3 (~> 1)
+
+BUNDLED WITH
+   1.10.3
