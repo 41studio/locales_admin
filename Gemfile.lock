@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    locales_admin (0.1.1)
-      jquery-rails (~> 4)
+    locales_admin (0.1.2)
+      jquery-rails
       rails (~> 4)
 
 GEM
@@ -108,7 +108,7 @@ PLATFORMS
 
 DEPENDENCIES
   locales_admin!
-  sqlite3 (~> 1)
+  sqlite3
 
 BUNDLED WITH
    1.10.3
