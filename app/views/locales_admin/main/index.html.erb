@@ -1,0 +1,16 @@
+<div id="locales-admin-area">
+  <h1>Locales Admin</h1>
+  <ul>
+    <% @files.each do |file| %>
+      <li>
+        <%= link_to file.match(/locales\/.*/), locales_admin_path(file: file), remote: true, method: :post %>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= form_tag locales_admin_path, method: :put, remote: true do %>
+    <%= hidden_field_tag :file, nil %>
+    <%= text_area_tag :editor, nil, style: "width: 80%;height: 300px;" %>
+    <%= submit_tag "Edit", data: {disable_with: "Please wait..."} %>
+  <% end %>
+</div>
