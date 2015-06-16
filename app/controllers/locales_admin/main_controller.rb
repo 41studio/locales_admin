@@ -3,6 +3,7 @@ module LocalesAdmin
     before_action :authentication_check
 
     def index
+
       @files = Dir.glob Rails.root.join("config", "locales", "**", "*.yml")
     end
 
@@ -14,6 +15,10 @@ module LocalesAdmin
       @file = File.open(params[:file], "w+")
       @file.write(params[:editor])
       @file.read
+    end
+
+    def logout
+      redirect_to "/", status: 401
     end
 
     private

@@ -13,4 +13,6 @@
     <%= text_area_tag :editor, nil, style: "width: 80%;height: 300px;" %>
     <%= submit_tag "Edit", data: {disable_with: "Please wait..."} %>
   <% end %>
+
+  <%= link_to "Logout", locales_admin_path, method: :delete %>
 </div>
