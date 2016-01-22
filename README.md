@@ -50,7 +50,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/aditiamahdar/locales_admin/fork )
+1. Fork it ( https://github.com/41studio/locales_admin/fork )
 2. Create your feature branch (`git checkout -b new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin new-feature`)
